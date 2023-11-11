@@ -1,0 +1,151 @@
+:root {
+  --primary-color: hsl(257, 40%, 49%);
+  --accent-color: hsl(300, 69%, 71%);
+
+  --primary-font-color: white;
+}
+
+.logo {
+  height: 2rem;
+}
+
+.logo img {
+  width: auto;
+  height: 100%;
+}
+
+.mockup {
+  width: 100%;
+  height: 100%;
+}
+
+.mockup img {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url("images/bg-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--primary-color);
+  font-family: 'Open Sans', sans-serif;
+  color: var(--primary-font-color);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 3rem;
+}
+
+.main-content .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  line-height: 1.6;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.main-content .title {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.main-content button {
+  height: 4rem;
+  width: 80%;
+  max-width: 250px;
+  border-radius: 2.5rem;
+  border: none;
+  color: var(--primary-color);
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.355);
+  font-family: inherit;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-content button:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-font-color);
+}
+
+.social-links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.social-links i {
+  border: 1px solid var(--primary-font-color);
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  color: var(--primary-font-color);
+}
+
+.social-links i:hover {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+@media only screen and (min-width: 1000px) {
+
+  body {
+    background-image: url("images/bg-desktop.svg");
+  }
+
+  .logo {
+    height: 4rem;
+  }
+  .container {
+    padding: 4rem 6rem;
+  }
+
+  .main-content {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .main-content .title {
+    font-size: 2.5rem;
+  }
+
+  .main-content .text {
+    align-items: flex-start;
+  }
+
+  .mockup {
+    width: 100%;
+    height: 100%;
+    min-width: 480px;
+  }
+
+  .mockup img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .social-links {
+    justify-content: flex-end;
+  }
+}
